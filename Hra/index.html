@@ -3,22 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clicker Game</title>
+    <title>Business Tycoon Clicker</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="game">
-        <h1>Clicker Game</h1>
-        <button id="clicker">Click Me!</button>
-        <p>Points: <span id="points">0</span></p>
-        <div id="upgrades">
-            <h2>Upgrades</h2>
-            <button id="upgrade1">Upgrade 1 (Cost: 10 points)</button>
-            <button id="upgrade2">Upgrade 2 (Cost: 50 points)</button>
-            <button id="autoclicker">Auto-Clicker (Cost: 100 points)</button>
-
-        </div>
+    <button id="restart">Restart Game </button>
+    
+    <div id="navbar">
+        <button onclick="showPage('clickerPage')">Clicker</button>
+        <button onclick="showPage('businessesPage')">Businesses</button>
+    </div>
+    <div id="clickerPage" class="page">
+        <h1>Business Tycoon Clicker</h1>
+        <div id="money">Money: $0</div>
+        <button id="clicker">Click to Earn Money</button>
+        
+    </div>
+    
+    
+    <div id="businessesPage" class="page">
+        <h1>Manage Businesses</h1>
+        <div id="businesses" class="businesses-container"></div>
     </div>
     <script src="script.js"></script>
+    
+
 </body>
 </html>
